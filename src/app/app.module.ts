@@ -11,8 +11,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { SQLite } from '@ionic-native/sqlite/ngx';
 import { IonicStorageModule } from '@ionic/storage';
 import { HttpClientModule } from '@angular/common/http';
-import { PortalModule } from './portal/portal.module';
-import { PlayerModule } from "./player/player.module";
 
 
 @NgModule({
@@ -23,9 +21,7 @@ import { PlayerModule } from "./player/player.module";
     IonicModule.forRoot(),
     AppRoutingModule,
     IonicStorageModule.forRoot(),
-    HttpClientModule,
-    PortalModule,
-    PlayerModule
+    HttpClientModule
   ],
   providers: [
     StatusBar,

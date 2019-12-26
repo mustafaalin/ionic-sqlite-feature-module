@@ -14,15 +14,7 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
-  },
-  {
-    path: 'portal',
-    loadChildren: './portal/portal.module#PortalModule'
-  },
-  {
-    path: 'player',
-    loadChildren: './player/player.module#PlayerModule'
-  }
+  },  { path: 'ilac', loadChildren: './ilac/ilac/ilac.module#IlacPageModule' }
 
 ];
 

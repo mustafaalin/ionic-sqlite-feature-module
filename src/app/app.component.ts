@@ -19,16 +19,6 @@ export class AppComponent {
       title: 'List',
       url: '/list',
       icon: 'list'
-    },
-    {
-      title: 'Portal',
-      url: '/portal',
-      icon: 'grid'
-    },
-    {
-      title: 'Player',
-      url: '/player',
-      icon: 'musical-notes'
     }
   ];
 

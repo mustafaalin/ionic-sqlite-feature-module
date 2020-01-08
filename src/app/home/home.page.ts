@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SQLService } from '../services/sql/sql.service';
+import { DatabaseProvider } from '../database/database'
 
 @Component({
   selector: 'app-home',
@@ -7,5 +7,7 @@ import { SQLService } from '../services/sql/sql.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  constructor(private veritabani:DatabaseProvider) {
+  }
 
 }

@@ -14,7 +14,16 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
-  },  { path: 'ilac', loadChildren: './ilac/ilac/ilac.module#IlacPageModule' }
+  },
+  { 
+    path: 'ilac', 
+    loadChildren: './ilac/ilac.module#IlacPageModule' 
+  },
+  { 
+    path: 'ilac-ekle', 
+    loadChildren: './ilac/ilac-ekle/ilac-ekle.module#IlacEklePageModule' 
+  }
+
 
 ];
 

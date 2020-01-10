@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>İlaç Ekle</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+  
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">İlaç Adı</ion-label>
+        <ion-input [(ngModel)]="txtIlacAd" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Açıklama</ion-label>
+        <ion-input [(ngModel)]="txtIlacAciklama" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-button color="primary" (click)="ilacResimCek()" block>İlaç Resmini Çek</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail slot="end">
+          <ion-img [src]="base64Image"></ion-img>
+        </ion-thumbnail>
+      </ion-item>
+    </ion-list>
+      <ion-button color="success" (click)="ilacEkle()" block>Kaydet</ion-button>
+  
+  </ion-content>

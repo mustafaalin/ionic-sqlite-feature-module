@@ -28,7 +28,7 @@ export class AppComponent {
     {
       title: 'Doktor Randevu',
       url: '/randevu',
-      icon: 'calculator'
+      icon: 'calendar'
     }
   ];
 

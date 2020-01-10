@@ -13,19 +13,21 @@ export class RandevuPage implements OnInit {
 
   private txtRandevuDoktorTarih:string="";
   private txtRandevuDoktorSaat:string="";
-  private base64Image:string;
+  private txtDoktorAdi:string="";
 
-  constructor(private veritabani: DatabaseProvider, 
-    private alert:AlertController, 
-    ) { 
+  constructor(private veritabani: DatabaseProvider, private alert:AlertController,     ) { 
   
   }
 
   ngOnInit() {
   }
+  doktorSec(){
+    this.txtDoktorAdi="Doktor 1";
 
-   Randevu() {
-    this.veritabani.Randevu(this.txtRandevuDoktorTarih,this.txtRandevuDoktorSaat,this.base64Image);
+  }
+
+   randevuAl() {
+    this.veritabani.Randevu(this.txtRandevuDoktorTarih,this.txtRandevuDoktorSaat);
     const alert = this.alert.create({
       header: 'Alinan Randevular',
       subHeader: 'Başarılı',
@@ -36,4 +38,3 @@ export class RandevuPage implements OnInit {
   
   
   }
-}

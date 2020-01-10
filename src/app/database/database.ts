@@ -1,7 +1,7 @@
 import {Injectable} from "@angular/core";
 import {SQLiteObject} from "@ionic-native/sqlite/ngx";
 import {Platform} from "@ionic/angular";
-import {Ilac} from "../entities/ilac"
+//import {Ilac} from "../entities/ilac"
 import { BehaviorSubject } from 'rxjs';
 import { SQLite } from '@ionic-native/sqlite/ngx';
 import { Storage } from '@ionic/storage';

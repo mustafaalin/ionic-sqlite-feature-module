@@ -24,6 +24,11 @@ export class AppComponent {
       title: 'İlaçlar',
       url: '/ilac',
       icon: 'medkit'
+    },
+    {
+      title: 'Doktor Randevu',
+      url: '/randevu',
+      icon: 'calculator'
     }
   ];
 

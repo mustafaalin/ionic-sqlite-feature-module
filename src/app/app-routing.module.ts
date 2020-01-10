@@ -20,6 +20,10 @@ const routes: Routes = [
     loadChildren: './ilac/ilac.module#IlacPageModule' 
   },
   { 
+    path: 'randevu', 
+    loadChildren: './randevu/randevu.module#RandevuPageModule' 
+  },
+  { 
     path: 'ilac-ekle', 
     loadChildren: './ilac/ilac-ekle/ilac-ekle.module#IlacEklePageModule' 
   }

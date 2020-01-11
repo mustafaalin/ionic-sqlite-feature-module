@@ -29,7 +29,15 @@ export class AppComponent {
       title: 'Doktor Randevu',
       url: '/randevu',
       icon: 'calendar'
+    },
+    {
+      title: 'analiz',
+      url: '/analiz',
+      icon: 'pie'
     }
+
+
+    
   ];
 
   constructor(

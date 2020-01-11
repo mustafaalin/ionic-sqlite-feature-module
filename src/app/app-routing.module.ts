@@ -26,7 +26,9 @@ const routes: Routes = [
   { 
     path: 'ilac-ekle', 
     loadChildren: './ilac/ilac-ekle/ilac-ekle.module#IlacEklePageModule' 
-  }
+  },
+  { path: 'analiz', loadChildren: './analiz/analiz.module#AnalizPageModule' }
+
 
 
 ];

@@ -27,7 +27,7 @@ export class RandevuPage implements OnInit {
   }
 
    randevuAl() {
-    this.veritabani.Randevu(this.txtRandevuDoktorTarih,this.txtRandevuDoktorSaat);
+    //this.veritabani.Randevu(this.txtRandevuDoktorTarih,this.txtRandevuDoktorSaat);
     const alert = this.alert.create({
       header: 'Randevular',
       subHeader: 'Başarılı',

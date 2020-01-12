@@ -19,4 +19,5 @@ INSERT INTO ilaclar (adi, ilacSayisi) VALUES ('Majazig',20);
 INSERT INTO ilaclar (adi, ilacSayisi) VALUES ('Asprin',15);
 INSERT INTO ilaclar (adi, ilacSayisi) VALUES ('Parol',10);
 INSERT INTO ilaclar(kadi, ilacSayisi) VALUES ('Vitamin',10);
+INSERT INTO ilaclar(kadi, ilacSayisi) VALUES ('Zerotinin',30);
 

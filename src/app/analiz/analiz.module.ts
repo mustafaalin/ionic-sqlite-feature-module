@@ -1,27 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AnalizPage } from './analiz.page';
-import { ChartsModule } from 'ng2-charts';
+import { AnalizPageRoutingModule } from './analiz-routing.module';
 
-const routes: Routes = [
-  {
-    path: '',
-    component: AnalizPage
-  }
-];
+import { AnalizPage } from './analiz.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes),
-    ChartsModule
+    AnalizPageRoutingModule
   ],
   declarations: [AnalizPage]
 })

@@ -1,22 +1,23 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>analiz</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      İlaçlar
+    </ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content padding>
-  <div class="row">
-    <div class="col-md-6">
-      <div style="display: block;">
-      <canvas baseChart width="300" height="300"
-                  [datasets]="lineChartData"
-                  [labels]="lineChartLabels"
-                  [options]="lineChartOptions"
-                  [colors]="lineChartColors"
-                  [legend]="lineChartLegend"
-                  [chartType]="lineChartType"
-                  (chartHover)="chartHovered($event)"
-                  (chartClick)="chartClicked($event)"></canvas>
-      </div>
-    </div>
-  </div>
+
+<ion-content>
+  <ion-list-header color="light">Doktorlar tarafından verilen ilaçların günlük analizi</ion-list-header>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-subtitle></ion-card-subtitle>
+    
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #barChart></canvas>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

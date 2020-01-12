@@ -14,7 +14,7 @@ INSERT INTO note (title, note, icon) VALUES ('Boat', 'This item Boat', 'boat');
 INSERT INTO note (title, note, icon) VALUES ('Bluetooth', 'This item Bluetooth', 'bluetooth');
 INSERT INTO note (title, note, icon) VALUES ('Build', 'This item Build', 'build');
 DROP TABLE IF EXISTS ilaclar;
-CREATE TABLE IF NOT EXISTS berberler (id INTEGER PRIMARY KEY AUTOINCREMENT,adi TEXT, ilacSayisi INT);
+CREATE TABLE IF NOT EXISTS ilaclar (id INTEGER PRIMARY KEY AUTOINCREMENT,adi TEXT, ilacSayisi INT);
 INSERT INTO ilaclar (adi, ilacSayisi) VALUES ('Majazig',20);
 INSERT INTO ilaclar (adi, ilacSayisi) VALUES ('Asprin',15);
 INSERT INTO ilaclar (adi, ilacSayisi) VALUES ('Parol',10);
